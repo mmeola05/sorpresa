@@ -77,7 +77,7 @@ const animationTimeline = () => {
     .to(".idea-12", 0.7, ideaTextTransLeave, "+=1.5")
     .staggerFromTo(".baloons img", 2.5, { opacity: 0.9, y: 1400 }, { opacity: 1, y: -1000 }, 0.2)
     .call(() => { 
-      window.location.href = "./sorpresa/flowers/flower.html"; // Cambia "pagina-destino.html" por la URL de tu destino
+      window.location.href = "../flowers/flower.html"; // Cambia "pagina-destino.html" por la URL de tu destino
     })
 
 };
