@@ -1,0 +1,30 @@
+{
+  "greeting": "Hola",
+  "name": "Mareta",
+  "greetingText": "",
+  "text1": "Hoy es tu cumpleaños!!! 🥳",
+  "text1Extra": "Te podría haber puesto solo esto...",
+
+  "textInChatBox": "¡Feliz cumpleaños, cariño!! 😘😘",
+  "sendButtonLabel": "Enviar",
+
+  "text2": "Pero claro, quería hacer algo más que solo felicitarte.",
+  "text3": "Hoy es tu cumpleaños y quería hacerte un regalo.",
+  "text4": "Pero te dije que no tenía dinero para ello...",
+  "text4Adjective": "Y me dijiste que no importaba, que no hacía falta nada.",
+
+  "text5Entry": "Porque...",
+  "text5Content": "Quería hacerte algo especial de todos modos.",
+  "text6": "Porque te mereces algo bonito, algo que al menos te saque una sonrisa.",
+  "text7": "Así que pensé...",
+
+
+  "smiley": ":)",
+  "bigTextPart1": "¿",
+  "bigTextPart2": "Y si...?",
+
+  "text8": "No tengo dinero, pero tengo tiempo.",
+  "text9": "Y de algo me tiene que servir lo que estoy estudiando.",
+  "text10": "Quizás no sea mucho, quizás sea una mierda...",
+  "text11": "Pero mejor esto que nada, ¿no? 😊"
+}

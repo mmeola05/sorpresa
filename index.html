@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sopresa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="headline"></h1>
+      <div id="countdown">
+        <ul>
+          <li><span id="days"></span> Días</li>
+          <li><span id="hours"></span> Horas</li>
+          <li><span id="minutes"></span> Minutos</li>
+          <li><span id="seconds"></span> Segundos</li>
+        </ul>
+      </div>
+      <div id="content" class="emoji1">
+        <span>🥳</span>
+        <span>🎉</span>
+        <span>🎂</span>
+
+        <button
+          class="btn-redirect1"
+          onclick="window.location.href='./happy-birthday-master/index.html'"
+        >
+          Ir a la página 🎉
+        </button>
+        
+      </div>
+      <div id="content" class="emoji" style="display: none">
+        <span>🥳</span>
+        <span>🎉</span>
+        <span>🎂</span>
+
+        <button
+          id="redirectButton"
+          class="btn-redirect"
+          onclick="window.location.href='./happy-birthday-master/index.html'"
+        >
+          Ir a la página 🎉
+        </button>
+        
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
