@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 html {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #121212; /* 🌙 Modo oscuro */
   color: #f1f1f1; /* Texto claro */
 }
@@ -47,7 +49,7 @@ body {
 }
 
 .one {
-  font-size: 4.5rem;
+  font-size: 8vw; /* Tamaño ajustable */
 }
 
 .one > img {
@@ -58,16 +60,18 @@ body {
 }
 
 .two {
-  font-size: 1.2rem;
+  font-size: 3rem; /* Ajustado para mejor legibilidad */
   font-weight: lighter;
 }
 
 .three {
-  font-size: 3rem;
+  font-size: 8vw;
 }
+
 .three-extra {
-  font-size: 3rem;
+  font-size: 5vw;
 }
+
 .four .text-box {
   width: 600px;
   margin: 0 auto;
@@ -140,7 +144,6 @@ body {
   width: 80px;
   top: -35px;
   left: 41.5%;
-  /* transform: scale(0.1); */
 }
 
 .baloons img {
@@ -298,7 +301,7 @@ body {
   }
 
   .wish-hbd {
-    font-size: 2.2em;
+    font-size: 2.5rem; /* Más grande para móviles */
   }
 
   .wish h5 {
@@ -308,5 +311,17 @@ body {
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
+  }
+
+  .one {
+    font-size: 10vw; /* Ajustado para pantallas pequeñas */
+  }
+
+  .two {
+    font-size: 2rem;
+  }
+
+  .three {
+    font-size: 8vw;
   }
 }

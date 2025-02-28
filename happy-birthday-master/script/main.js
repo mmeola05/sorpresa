@@ -4,7 +4,7 @@ const fetchData = () => {
     .then((data) => data.json())
     .then((data) => {
       dataArr = Object.keys(data);
-      dataArr.map((customData) => {
+      dataArr.map((customData,index) => {
         if (data[customData] !== "") {
           if (customData === "imagePath") {
             document
@@ -19,7 +19,7 @@ const fetchData = () => {
 
         // Check if the iteration is over
         // Run amimation if so
-        if (dataArr.length === dataArr.indexOf(customData) + 1) {
+        if (index === dataArr.length - 1)  {
           animationTimeline();
         }
       });
@@ -33,6 +33,7 @@ const animationTimeline = () => {
   if (!textBoxChars.querySelector("span")) {
     textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML.split("").join("</span><span>")}</span>`;
   }
+  
 
   const ideaTextTrans = { opacity: 0, y: -20, rotationX: 5, skewX: "15deg" };
   const ideaTextTransLeave = { opacity: 0, y: 20, rotationY: 5, skewX: "-15deg" };
