@@ -18,7 +18,7 @@ const fetchData = () => {
         }
 
         // Check if the iteration is over
-        // Run amimation if so
+        // Run animation if so
         if (index === dataArr.length - 1)  {
           animationTimeline();
         }
@@ -29,11 +29,18 @@ const fetchData = () => {
 // Animation Timeline
 const animationTimeline = () => {
   const textBoxChars = document.querySelector(".hbd-chatbox");
-  if (!textBoxChars) { console.error("❌ Error: No se encontró `.hbd-chatbox` o `.wish-hbd` en el DOM."); return; }
+
+  if (!textBoxChars) { 
+    console.error("❌ Error: No se encontró `.hbd-chatbox` en el DOM."); 
+    return; 
+  }
+
+  // ❌ Se ha deshabilitado la animación de los caracteres en .hbd-chatbox ❌
+  /*
   if (!textBoxChars.querySelector("span")) {
     textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML.split("").join("</span><span>")}</span>`;
   }
-  
+  */
 
   const ideaTextTrans = { opacity: 0, y: -20, rotationX: 5, skewX: "15deg" };
   const ideaTextTransLeave = { opacity: 0, y: 20, rotationY: 5, skewX: "-15deg" };
@@ -50,7 +57,10 @@ const animationTimeline = () => {
     .to(".three-extra", 0.7, { opacity: 0, y: 10 }, "+=2")
     .from(".four", 0.7, { scale: 0.2, opacity: 0 })
     .from(".fake-btn", 0.3, { scale: 0.2, opacity: 0 })
+    // ❌ Aquí se ha comentado la animación de los caracteres en .hbd-chatbox ❌
+    /*
     .staggerTo(".hbd-chatbox span", 0.5, {opacity: 1, visibility: "visible" }, 0.05)
+    */
     .to(".fake-btn", 0.1, { backgroundColor: "rgb(127, 206, 248)" })
     .to(".four", 0.5, { scale: 0.2, opacity: 0, y: -150 }, "+=0.7")
     .from(".idea-1", 0.7, ideaTextTrans)
@@ -82,10 +92,8 @@ const animationTimeline = () => {
     .staggerFromTo(".baloons img", 2.5, { opacity: 0.9, y: 1400 }, { opacity: 1, y: -1000 }, 0.2)
     .call(() => { 
       window.location.href = "../../sorpresa/flowers/flower.html"; // Cambia "pagina-destino.html" por la URL de tu destino
-    })
-
+    });
 };
-
 
 // Run fetch and animation in sequence
 fetchData();
