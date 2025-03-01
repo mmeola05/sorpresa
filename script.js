@@ -31,6 +31,7 @@
         if (distance < 0) {
             document.getElementById("headline").innerText = "¡SORPRESA!";
             document.getElementById("countdown").style.display = "none";
+            document.getElementById("alerta").style.display = "none";
             document.getElementById("content").style.display = "block";
             document.getElementById("redirectButton").style.display = "block";
 
