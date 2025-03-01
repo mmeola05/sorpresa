@@ -125,7 +125,10 @@ body {
   display: inline-block;
   color: #ff1493;
 }
-
+.idea-4{
+  font-size: 2rem;
+  color: #ff8db1;
+}
 .five .idea-5 {
   font-size: 2rem;
   color: #ff8db1;
