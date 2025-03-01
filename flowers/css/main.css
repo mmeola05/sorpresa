@@ -1371,8 +1371,47 @@ body {
   transition: opacity 1s ease-in-out, visibility 0s 1s;
 }
 
-/* Animación de aparición del botón */
-.volver-inicio.show {
-  opacity: 1;
-  visibility: visible;
+.felicidades-text {
+  text-align: center;
+  margin-top: 100px;
+  display: none;
+}
+
+.felicidades-text p {
+  font-size: 40px;
+  font-weight: bold;
+  color: #f672b0;
+}
+
+.felicidades-text .grande {
+  font-size: 120px;
+  color: #f672b0;
+  font-weight: bold;
+}
+
+.mensaje-secundario {
+  width: 100%;
+  display: none;
+  text-align: center;
+  z-index: 1000;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff; /* Color dorado */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: fade-in-down 1.5s ease-out forwards;
+}
+.mensaje-secundario p{
+  font-size: 40px;
+  font-weight: bold;
+  color: #f672b0;
+}
+.volver-inicio {
+  display: none;
+  text-align: center;
+  margin-top: 30px;
 }

@@ -61,14 +61,14 @@ const animationTimeline = () => {
     /*
     .staggerTo(".hbd-chatbox span", 0.5, {opacity: 1, visibility: "visible" }, 0.05)
     */
-    .to(".fake-btn", 0.1, { backgroundColor: "rgb(127, 206, 248)" })
-    .to(".four", 0.5, { scale: 0.2, opacity: 0, y: -150 }, "+=0.7")
+    .to(".fake-btn", 0.1, { backgroundColor: "#fc789d" })
+    .to(".four", 0.5, { scale: 0.2, opacity: 0, y: -150 }, "+=1.5")
     .from(".idea-1", 0.7, ideaTextTrans)
     .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
     .from(".idea-2", 0.7, ideaTextTrans)
     .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
     .from(".idea-3", 0.7, ideaTextTrans)
-    .to(".idea-3 strong", 0.8, { scale: 1.2, x: 10, backgroundColor: "rgb(21, 161, 237)", color: "#fff" })
+    .to(".idea-3 strong", 0.8, { scale: 1.2, x: 10, backgroundColor: "#ff8db1", color: "#fff" })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=3.5")
     .from(".idea-4", 0.7, ideaTextTrans)
     .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")

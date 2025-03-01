@@ -7,8 +7,8 @@ html {
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #121212; /* 🌙 Modo oscuro */
-  color: #f1f1f1; /* Texto claro */
+  background-color: #f8f0f0;
+  color: #333;
 }
 
 .container {
@@ -50,6 +50,7 @@ body {
 
 .one {
   font-size: 8vw; /* Tamaño ajustable */
+  color: #ff4f81;
 }
 
 .one > img {
@@ -62,21 +63,24 @@ body {
 .two {
   font-size: 3rem; /* Ajustado para mejor legibilidad */
   font-weight: lighter;
+  color: #ff69b4;
 }
 
 .three {
   font-size: 8vw;
+  color: #ff1493;
 }
 
 .three-extra {
   font-size: 5vw;
+  color: #d63e70;
 }
 
 .four .text-box {
   width: 600px;
   margin: 0 auto;
-  border: 3px solid #444; /* Bordes oscuros */
-  background-color: #1e1e1e; /* Caja de chat oscura */
+  border: 3px solid #ff8db1;
+  background-color: #ffe1f1;
   border-radius: 5px;
   padding: 10px;
   position: relative;
@@ -86,6 +90,7 @@ body {
 .text-box p {
   margin: 0;
   text-align: left;
+  color: #444;
 }
 
 .text-box span {
@@ -97,7 +102,7 @@ body {
   right: 5px;
   bottom: 5px;
   color: #fff;
-  background-color: rgb(21, 161, 237);
+  background-color: #ff4f81;
   padding: 5px 8px;
   border-radius: 3px;
 }
@@ -108,15 +113,22 @@ body {
   left: 0;
   right: 0;
 }
-
+.idea-1,
+.idea-2,
+.idea-3 {
+  font-size: 2rem;
+  color: #d63e70;
+}
 .idea-3 strong {
   padding: 3px 5px;
   border-radius: 3px;
   display: inline-block;
+  color: #ff1493;
 }
 
 .five .idea-5 {
   font-size: 2rem;
+  color: #ff8db1;
 }
 
 .idea-5 span,
@@ -128,7 +140,25 @@ body {
 .idea-6 span {
   font-size: 15rem;
 }
+.idea-6 {
+  font-size: 2rem;
+  color: #ff66b2; /* Rosa suave */
+}
 
+.idea-7 {
+  font-size: 2rem;
+  color: #ff4d94; /* Rosa oscuro */
+}
+
+.idea-8 {
+  font-size: 3rem;
+  color: #ff1493; /* Rosa brillante */
+}
+
+.idea-9, .idea-10, .idea-11, .idea-12 {
+  font-size: 2rem;
+  color: #d63e70; /* Rosa claro */
+}
 .six {
   position: relative;
 }
@@ -275,17 +305,13 @@ body {
 
 @media screen and (max-width: 500px) {
   .container {
-    width: 90%;
+    width: 95%;
   }
 
   .four .text-box {
-    width: 90%;
+    width: 93%;
   }
 
-  .text-box .fake-btn {
-    right: 5px;
-    bottom: -38px;
-  }
 
   .idea-5 span {
     display: block;
